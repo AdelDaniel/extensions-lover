@@ -1,5 +1,5 @@
 name: extensions_lover
-description: "A new Flutter package project."
+description: "Contains some of the methods and getters in extensions that mostly used by Flutter Developer"
 version: 0.0.1
 repository: https://github.com/AdelDaniel/extensions-lover
 

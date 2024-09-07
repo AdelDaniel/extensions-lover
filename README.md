@@ -12,6 +12,7 @@ and the Flutter guide for
 -->
 
 short description: 
+Helps to not write so much words and have helper methods for some of data types 
 This Package contains extensions only for `Strings`, `List`, `Media Query`, and more. 
 
 ## Features
