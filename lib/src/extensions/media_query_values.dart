@@ -25,9 +25,9 @@ extension MediaQueryValuesExtensions on BuildContext {
   double textScale(double fontSize) =>
       MediaQuery.of(this).textScaler.scale(fontSize);
 
-  /// return percentage / 100
+  /// return (heightPercentage / 100) * height
   double hp(double heightPercentage) => (heightPercentage / 100) * height;
 
-  /// return percentage / 100
+  /// return (widthPercentage / 100) * width
   double wp(double widthPercentage) => (widthPercentage / 100) * width;
 }
