@@ -11,12 +11,13 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-short description: 
-Helps to not write so much words and have helper methods for some of data types 
-This Package contains extensions only for `Strings`, `List`, `Media Query`, and more. 
+<!-- short description:  -->
+- Helps to not write so much words (`context.width` instead of `MediaQuery.of(context).size.width`)
+- have helper methods for some of data types (`list.isNullOrEmpty` instead of `list == null || list!.isEmpty`)
+This Package contains extensions for `Strings`, `List`, `Media Query`, and more. 
 
 ## Features
-in this package:
+In this package:
 - For Lists
   - Check if the list is Null Or Empty
   - Check if the list is Not Null Not Empty
@@ -33,7 +34,7 @@ in this package:
   - concatenate Question Mark English
   - concatenate Dollar Sign
   - concatenate Question Mark Arabic
-- Media Query 
+- For Media Query 
   - context.height
   - context.width
   - context.toPadding
