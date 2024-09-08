@@ -10,6 +10,16 @@ For general information about developing packages, see the Dart guide for
 and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
+<p align="center">
+<!-- Package Link -->
+<a href="https://pub.dev/packages/extensions_lover"><img src="https://img.shields.io/pub/v/extensions_lover.svg" alt="pub package"></a>
+<!-- Stars on Github -->
+<a href="https://github.com/AdelDaniel/extensions-lover"><img src="https://img.shields.io/github/stars/AdelDaniel/extensions-lover.svg?style=flat&logo=github&colorB=deeppink&label=stars" alt="Star on Github"></a>
+<!-- very good analysis usages -->
+<a href="https://pub.dev/packages/very_good_analysis"><img src="https://img.shields.io/badge/style-very_good_analysis-B22C89.svg" alt="style: very good analysis"></a>
+<!-- MIT -->
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="License: MIT"></a>
+</p>
 
 <!-- short description:  -->
 - Helps to not write so much words (`context.width` instead of `MediaQuery.of(context).size.width`)
