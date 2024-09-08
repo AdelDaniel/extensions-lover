@@ -1,29 +1,42 @@
 import 'package:intl/intl.dart';
 
+/// Helper Method for the String Data Type
 extension StringExtensions on String {
-  String get concatenateAsterisk => "$this *";
+  /// Concatenate Asterisk At The End Of the String
+  String get concatenateAsterisk => '$this *';
 
-  String get concatenateColon => "$this:";
+  /// Concatenate Colon At The End Of the String
+  String get concatenateColon => '$this:';
 
-  String get concatenateExclamation => "$this!";
+  /// Concatenate Exclamation At The End Of the String
+  String get concatenateExclamation => '$this!';
 
-  String get concatenateComma => "$this,";
+  /// Concatenate Comma At The End Of the String
+  String get concatenateComma => '$this,';
 
-  String get concatenateDash => "$this-";
+  /// Concatenate Dash At The End Of the String
+  String get concatenateDash => '$this-';
 
-  String get concatenateHash => "$this#";
+  /// Concatenate Hash At The End Of the String
+  String get concatenateHash => '$this#';
 
-  String get concatenateSpace => "$this ";
+  /// Concatenate Space At The End Of the String
+  String get concatenateSpace => '$this ';
 
-  String get concatenateNewline => "$this\n";
+  /// Concatenate Newline At The End Of the String
+  String get concatenateNewline => '$this\n';
 
-  String get concatenateBrackets => "($this)";
+  /// Concatenate Brackets Between String
+  String get concatenateBrackets => '($this)';
 
-  String get concatenateQuestionMarkEnglish => "$this?";
+  /// Concatenate Question Mark English At End
+  String get concatenateQuestionMarkEnglish => '$this?';
 
-  String get concatenateDollarSign => "\$$this";
+  /// Concatenate Dollar Sign
+  String get concatenateDollarSign => '\$$this';
 
-  String get concatenateQuestionMarkArabic => "$this؟";
+  /// Concatenate Question Mark Arabic At End
+  String get concatenateQuestionMarkArabic => '$this؟';
 
   static final NumberFormat numberFormat = NumberFormat.decimalPattern();
 
@@ -67,20 +80,20 @@ extension StringExtensions on String {
 
   bool isMediaVideo() {
     return [
-      "3gp",
-      "avi",
-      "mpg",
-      "mpeg",
-      "webm",
-      "ogg",
-      "flv",
-      "m4v",
-      "mvp",
-      "mp4",
-      "wmv",
-      "mkv",
-      "mov",
-      "ts",
+      '3gp',
+      'avi',
+      'mpg',
+      'mpeg',
+      'webm',
+      'ogg',
+      'flv',
+      'm4v',
+      'mvp',
+      'mp4',
+      'wmv',
+      'mkv',
+      'mov',
+      'ts',
     ].any((extension) => toLowerCase().endsWith(extension));
   }
 }

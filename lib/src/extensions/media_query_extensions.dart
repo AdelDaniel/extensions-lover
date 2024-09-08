@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 /// u can use this values like: context.width
-extension MediaQueryValuesExtensions on BuildContext {
+extension MediaQueryExtensions on BuildContext {
   /// use: context.height
   /// instead of: MediaQuery.of(this).size.height
   double get height => MediaQuery.of(this).size.height;
