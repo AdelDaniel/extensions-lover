@@ -22,16 +22,19 @@ and the Flutter guide for
 </p>
 
 <!-- short description:  -->
+
 - Helps to not write so much words (`context.width` instead of `MediaQuery.of(context).size.width`)
 - have helper methods for some of data types (`list.isNullOrEmpty` instead of `list == null || list!.isEmpty`)
-This Package contains extensions for `Strings`, `List`, `Media Query`, and more. 
+  This Package contains extensions for `Strings`, `List`, `Media Query`, and more.
 
 ## Features
+
 In this package:
+
 - For Lists
   - Check if the list is Null Or Empty
   - Check if the list is Not Null Not Empty
-- For Strings 
+- For Strings
   - concatenate Asterisk
   - concatenate Colon
   - concatenate Exclamation
@@ -44,15 +47,17 @@ In this package:
   - concatenate Question Mark English
   - concatenate Dollar Sign
   - concatenate Question Mark Arabic
-- For Media Query 
+- For DateTime
+  - Check if date is today
+  - Check if date is yesterday
+  - Check if date is tomorrow
+- For Media Query
   - context.height
   - context.width
   - context.toPadding
   - context.bottom
 
-
 ## Getting started
-
 
 1. Add `extensions_lover: ^latest_version` on `dependencies`.
 
@@ -69,7 +74,6 @@ void main() {
   //will print: Hello Extensions Lover!
 }
 ```
-
 
 ## Usage
 
@@ -118,11 +122,10 @@ void main() {
   print(helloFlutter.concatenateQuestionMarkArabic);
 ```
 
-
 ### With Lists
 
 ```dart
-    
+
 List<dynamic>? list;
   print(list.isNullOrEmpty); // true
   list = [];
@@ -133,7 +136,19 @@ List<dynamic>? list;
 
 ```
 
+### With DateTime
+
+```dart
+final today = DateTime.now();
+final yesterday = today.subtract(const Duration(days: 1));
+final tomorrow = today.add(const Duration(days: 1));
+
+print(today.isToday);       // true
+print(yesterday.isYesterday); // true
+print(tomorrow.isTomorrow);   // true
+```
 
 ## Additional information
+
 - The package is in the initial phase.
-- Fell free to add issues or create pull requests as you want 
+- Fell free to add issues or create pull requests as you want
