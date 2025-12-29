@@ -1,3 +1,4 @@
+// src/extensions/string_extensions.dart
 import 'package:intl/intl.dart';
 
 /// Helper Method for the String Data Type
@@ -95,6 +96,40 @@ extension StringExtensions on String {
       'mov',
       'ts',
     ].any((extension) => toLowerCase().endsWith(extension));
+  }
+
+  /// Take the first [number] of characters from the string
+  /// If [number] is greater than string length, returns the entire string
+  /// If [number] is negative or zero, returns an empty string
+  ///
+  /// Example:
+  /// ```dart
+  /// 'Hello World'.takeChars(5) // Returns 'Hello'
+  /// 'Hi'.takeChars(10) // Returns 'Hi'
+  /// 'Test'.takeChars(0) // Returns ''
+  /// ```
+  String takeChars(int number) {
+    if (number <= 0) return '';
+    if (number >= length) return this;
+    return substring(0, number);
+  }
+
+  /// Take the first [number] of words from the string
+  /// Words are separated by whitespace
+  /// If [number] is greater than word count, returns the entire string
+  /// If [number] is negative or zero, returns an empty string
+  ///
+  /// Example:
+  /// ```dart
+  /// 'Hello World from Dart'.takeWords(2) // Returns 'Hello World'
+  /// 'Single'.takeWords(5) // Returns 'Single'
+  /// 'Test String'.takeWords(0) // Returns ''
+  /// ```
+  String takeWords(int number) {
+    if (number <= 0) return '';
+    final words = split(RegExp(r'\s+'));
+    if (number >= words.length) return this;
+    return words.take(number).join(' ');
   }
 }
 
