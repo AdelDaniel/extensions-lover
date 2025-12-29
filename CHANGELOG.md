@@ -1,3 +1,8 @@
+## 1.2.0
+
+- Add `takeChars(int number)` method to take first N characters from a string with safe overflow and zero handling.
+- Add `takeWords(int number)` method to take first N words from a string with whitespace as delimiter.
+
 ## 1.1.0
 
 - Add DateTime helpers to check if a date is today, yesterday, or tomorrow (`isToday`, `isYesterday`, `isTomorrow`).

@@ -47,6 +47,8 @@ In this package:
   - concatenate Question Mark English
   - concatenate Dollar Sign
   - concatenate Question Mark Arabic
+  - Take first N characters from a string
+  - Take first N words from a string
 - For DateTime
   - Check if date is today
   - Check if date is yesterday
@@ -120,6 +122,12 @@ void main() {
 
   /// concatenate Question Mark Arabic
   print(helloFlutter.concatenateQuestionMarkArabic);
+
+  /// Take first N characters
+  print('Hello World'.takeChars(5)); // Output: Hello
+
+  /// Take first N words
+  print('Hello World from Dart'.takeWords(2)); // Output: Hello World
 ```
 
 ### With Lists
