@@ -58,6 +58,10 @@ In this package:
   - context.width
   - context.toPadding
   - context.bottom
+- For Theme Values
+  - Access display, headline, title, body, and label text styles from context
+  - Access theme colors and brightness helpers from context
+  - Check desktop, mobile, and tablet layout helpers from context
 
 ## Getting started
 
@@ -154,6 +158,19 @@ final tomorrow = today.add(const Duration(days: 1));
 print(today.isToday);       // true
 print(yesterday.isYesterday); // true
 print(tomorrow.isTomorrow);   // true
+```
+
+### With Theme Values
+
+```dart
+Text(
+  'Hello Extensions Lover',
+  style: context.labelLarge,
+);
+
+final primaryColor = context.primaryColor;
+final secondaryColor = context.secondaryColor;
+final isLightTheme = context.isLight;
 ```
 
 ## Additional information

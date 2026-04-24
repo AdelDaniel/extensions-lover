@@ -1,3 +1,14 @@
+## [1.3.0] - 2026-04-24
+
+### Added
+
+- Add label text style getters for theme values on build contexts.
+
+### Changed
+
+- Improve theme helper documentation for better API discovery.
+- Improve compatibility with current Flutter color handling for secondary theme colors.
+
 ## 1.2.0
 
 - Add `takeChars(int number)` method to take first N characters from a string with safe overflow and zero handling.
